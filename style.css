@@ -1,0 +1,72 @@
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+body{
+    margin: 0;
+    font-family: Pretendard;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 20vw 2fr;
+}
+.menubar {
+    background-color: black;
+    width: 20vw;
+    height: 100vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.menubar li{
+    display: block;
+    color: white;
+    padding: 8px;
+    height: 7vh;
+    line-height: 7vh;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 200;
+    font-size: 25px;
+}
+#emptyMenuSpace {
+    margin-top: 20vh;
+}
+.article {
+    display: grid;
+    grid-template-columns: 40vw 2fr;
+}
+.profile {
+    text-align: center;
+}
+.contents {
+    margin-top: 8vh;
+}
+#Education {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+#Certificate {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+#Education p {
+    text-indent: 2vw;
+}
+#Certificate p {
+    text-indent: 2vw;
+}
+h2 {
+    font-weight: 500;
+}
+p {
+    font-size: 20px;
+    font-weight: 200;
+}
+a {
+    text-decoration-line: none;
+}
+.menubar a li:hover {
+    background-color: #333333;
+}
