@@ -5,6 +5,14 @@
         <title>gnod-soo</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script>
+            function email() {
+                var email = "ehdtn3385@gmail.com"
+                navigator.clipboard.writeText(email);
+                alert("Copied!");
+
+            }
+        </script>
     </head>
     <body>
         <div id="container">
@@ -18,8 +26,8 @@
                     <img src="img/profile.png" style="width: 13vw; display: block; margin: 0 auto; margin-top: 31vh">
                     <h2 id="name">Dongsoo Han</h2>
                     <p id="job">Student</p>
-                    <img src="img/email_icon.png" style="width: 3vw; display: inline-block;;">
-                    <a href="https://github.com/gnod-soo/gnod-soo.github.io" target="_blank"><img src="img/github_icon.png" style="width: 3vw; display: inline-block;"></a>
+                    <img title="Email" onclick="email()" src="img/email_icon.png" style="width: 3vw; display: inline-block; cursor: pointer;">
+                    <a href="https://github.com/gnod-soo/gnod-soo.github.io" target="_blank"><img title="Github" src="img/github_icon.png" style="width: 3vw; display: inline-block;"></a>
                 </div>
                 <div class="contents">
                     <div id="Education">
