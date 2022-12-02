@@ -40,14 +40,14 @@ var fail = document.querySelector('#fail');
 		ndef.addEventListener('readingerror', () => {
 			var now = new Date();
 			log('카드를 다시 대주세요 / ' + now.toLocaleString());
-			$("body").scrollTop($(document).height());
+			window.scrollTo(0, document.body.scrollHeight);
 			fail.innerHTML++;
 		});
 
 		ndef.addEventListener('reading', ({ message, serialNumber }) => {
 			var now = new Date();
 			log(`인식되었습니다 / Serial: ${serialNumber} / ${now.toLocaleString()}`);
-			$("body").scrollTop($(document).height());
+			window.scrollTo(0, document.body.scrollHeight);
 			success.innerHTML++;
 		});
 		
