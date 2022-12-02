@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "Mancity NFC App",
-  "short_name": "MNA",
+  "name": "Mancity NFC Scanner",
+  "short_name": "MNS",
   "start_url": "./nfc.html",
   "display": "standalone",
   "background_color": "#fff",
