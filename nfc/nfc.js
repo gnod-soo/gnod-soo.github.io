@@ -40,15 +40,17 @@ var fail = document.querySelector('#fail');
 		ndef.addEventListener('readingerror', () => {
 			var now = new Date();
 			log('카드를 다시 대주세요 / ' + now.toLocaleString());
+			$("body").scrollTop($(document).height());
 			fail.innerHTML++;
 		});
 
 		ndef.addEventListener('reading', ({ message, serialNumber }) => {
 			var now = new Date();
 			log(`인식되었습니다 / Serial: ${serialNumber} / ${now.toLocaleString()}`);
+			$("body").scrollTop($(document).height());
 			success.innerHTML++;
 		});
-		$("body").scrollTop($(document).height());
+		
 		
 	} catch (error) {
 		log('에러: ' + error + '\nNFC 기본 or 읽기/쓰기, 안드로이드 크롬에서만 동작합니다.');
