@@ -27,14 +27,6 @@ var ChromeSamples = {
 	},
 };
 
-function startScroll(interval) {
-	setInterval("autoScroll()", interval);
-}
-
-function autoScroll() {
-	window.scrollBy(0,30);
-}
-
 scanButton.addEventListener('click', async () => {
 log = ChromeSamples.log;
 navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
@@ -56,7 +48,7 @@ var fail = document.querySelector('#fail');
 			log(`인식되었습니다 / Serial: ${serialNumber} / ${now.toLocaleString()}`);
 			success.innerHTML++;
 		});
-		startScroll(500);
+		$("body").scrollTop($(document).height());
 		
 	} catch (error) {
 		log('에러: ' + error + '\nNFC 기본 or 읽기/쓰기, 안드로이드 크롬에서만 동작합니다.');
