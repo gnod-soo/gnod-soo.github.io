@@ -51,6 +51,6 @@ var fail = document.querySelector('#fail');
 		
 		
 	} catch (error) {
-		log('에러: ' + error + '\nNFC 기본 or 읽기/쓰기, 안드로이드 크롬에서만 동작합니다.');
+		log('에러: ' + error + '\nNFC 기본 or 읽기/쓰기, 안드로이드에서만 동작합니다.');
 	}
 });
